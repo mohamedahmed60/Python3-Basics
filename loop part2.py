@@ -1,5 +1,6 @@
 #class list in python
-'''
+
+
 x = 'ali'
 x.upper()ا#اعلى
 print(x)
@@ -7,9 +8,9 @@ print(x)
 h = [1,2,3,4]
 h.append(5)#اضافة
 print(h)
-'''
 
-'''
+
+
 class Calculator:
 
     def sum(self,x,y):
@@ -27,11 +28,11 @@ class Calculator:
 cl = Calculator()
 #cl.sum(3,5)
 #cl.mul(4,4)
-'''
+
 
 
 #inheritance class in python
-'''
+
 class Calculator:
     
     def sum(self,x,y):
@@ -51,9 +52,9 @@ s1 = SciCalculator()
 s1.sum(2,3)
 s1.mul(4,5)
 s1.power(2,3)
-'''
 
-'''
+
+
 class A:
     def do(self):
         print('in A')
@@ -75,7 +76,7 @@ o1 = D()
 print(D.mro())#طريقة عمل الميثود 
 o1.do()
 
-'''
+
 
 class Student:
 
@@ -103,3 +104,41 @@ d.add_mark(80)
 d.add_mark(90)
 d.add_mark(10)
 d.print_marks()
+
+
+
+'''  loop while  '''
+print("Select Opreation: ")
+
+print("1: Addition")
+print("2: Subtract")
+print("3: Multiply")
+print("4: Dividu")
+
+
+while True:
+    choice = int(input('Enter Choice (1/2/3/4): '))
+
+    if choice in (1,2,3,4):
+       number1 = int(input("Enter First Number: "))
+       number2 = int(input("Enter Second Number: "))
+       if choice == 1:
+           resulte = number1 + number2
+           print(f"{number1} + {number2} = {resulte}")
+       elif choice == 2:
+            resulte = number1 - number2
+            print(f"{number1} - {number2} = {resulte}")
+       elif choice == 3:
+            resulte = number1 * number2
+            print(f"{number1} * {number2} ={resulte}")
+       elif choice == 4:
+            resulte = number1 / number2
+            print(f"{number1} / {number2} = {resulte}")
+       else:
+            print("Error, Enter choice 1,2,3,4: ")
+       nextcaculation = input("Let's do next caculation (yes/no)")
+       if nextcaculation == "no":
+            break
+    else:
+        print("Error")
+      
